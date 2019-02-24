@@ -5,7 +5,7 @@ import json
 def main():
         print('This test program represents usage of Alpha Vantage API\n'
               'and returns you a JSON file with info about leaps and volume\n'
-              'aka quantity of operations on shares of the given company\n''
+              'aka quantity of operations on shares of the given company\n'
               'in certain period\n\n')
         company = input('Enter company name:')
         function = 'TIME_SERIES_' + input('Category of information you need INTRADAY/DAILY/WEEKLY/MONTHLY:')
@@ -21,7 +21,7 @@ def main():
         else:
                 outputsize = None
 
-        print(parse_data(get_data(function, company, interval, outputsize)))
+        return_json(parse_data(get_data(function, company, interval, outputsize)))
 
 
 def get_data(function, symbol, interval, outputsize):
@@ -51,7 +51,7 @@ def parse_data(data):
 
 def return_json(parsed_data):
         with open('test.json', 'w') as json_file:
-            json.dumps(parsed_data, json_file)
+            json.dump(parsed_data, json_file)
 
 
 if __name__ == '__main__':
