@@ -1,4 +1,26 @@
-This test program represents usage of Alpha Vantage API
-and returns you a JSON file with info about leaps and volume
-aka quantity of operations on shares of the given company
-in certain period
+STOCK MARKET SIMULATOR
+
+Програма Stocks Market Simulator дозволить усім її користувачам навчитись оперувати акціями на біржі без втрати капіталу, завдяки реалістичній симуляції всіх згенерованих процесів.
+
+
+РОБОТА ПРОГРАМИ
+
+Користувач отримує графіки цін на акції 30ти компаній, оцінюючи ситуацію на ринку та власний поточний(стартовий) капітал, він може зробити рішення купити та продати акції тих чи інших компаній. Програма отримує ці запити та обробляє їх, повертаючи оновлений графік після одного пройденого циклу купівлі-продажу. Далі користувач може аналізувати свій вплив на глобальний ринок. Симуляція продовжується циклами до моменту виходу з програми.
+
+ОПИС МОДУЛІВ
+
+*main.py - основний модуль програми
+*graphs.py - візуалізація поточних даних у графіку
+*market.py - містить клас Market, котрий робить запити на актуальні дані, зберігає їх та обраховує 
+*network.py - містить клас Network, клас штучних інтелектів та їхньої взаємодії
+*user.py - містить клас користувача, де зберігаються його рішення і капітали
+*stocksim.kv - модуль на мові kivi, GUI
+
+ВСТАНОВЛЕННЯ ТА ВИКОРИСТАННЯ
+git clone https://github.com/yankur/StockExchange_coursework.git
+cd StockExchange_coursework/
+python main.py
+
+#with gui
+cd StockExchange_coursework/with_GUI
+python main_gui.py
