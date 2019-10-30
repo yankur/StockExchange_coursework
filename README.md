@@ -3,7 +3,7 @@ STOCK MARKET SIMULATOR
 Application Stocks Market Simulator will allow all of its users to learn operating stocks on the market without loosing funds, thanks to the realistic simulation of all stock market processes.
 
 
-РОБОТА ПРОГРАМИ
+APPLICATION WORK
 
 User gets charts with current stock prices of 30 companies. By evaluating stock market situation and his current(starting) capital, he can make a decision of buying or selling any company stocks. Program gets his requests and computes them, returning renewed chart of stock market situation after on cycle of sell-buy process. Then user can analyse his influence on global stock market. Simulation will last until program is runned.
 
