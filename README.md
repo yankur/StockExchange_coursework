@@ -1,24 +1,24 @@
 STOCK MARKET SIMULATOR
 
-Програма Stocks Market Simulator дозволить усім її користувачам навчитись оперувати акціями на біржі без втрати капіталу, завдяки реалістичній симуляції всіх згенерованих процесів.
+Application Stocks Market Simulator will allow all of its users to learn operating stocks on the market without loosing funds, thanks to the realistic simulation of all stock market processes.
 
 
 РОБОТА ПРОГРАМИ
 
-Користувач отримує графіки цін на акції 30ти компаній, оцінюючи ситуацію на ринку та власний поточний(стартовий) капітал, він може зробити рішення купити та продати акції тих чи інших компаній. Програма отримує ці запити та обробляє їх, повертаючи оновлений графік після одного пройденого циклу купівлі-продажу. Далі користувач може аналізувати свій вплив на глобальний ринок. Симуляція продовжується циклами до моменту виходу з програми.
+User gets charts with current stock prices of 30 companies. By evaluating stock market situation and his current(starting) capital, he can make a decision of buying or selling any company stocks. Program gets his requests and computes them, returning renewed chart of stock market situation after on cycle of sell-buy process. Then user can analyse his influence on global stock market. Simulation will last until program is runned.
 
 
-ОПИС МОДУЛІВ
+MODULES DESCRIPTION
 
-main.py - основний модуль програми  
-graphs.py - візуалізація поточних даних у графіку  
-market.py - містить клас Market, котрий робить запити на актуальні дані, зберігає їх та обраховує   
-network.py - містить клас Network, клас штучних інтелектів та їхньої взаємодії  
-user.py - містить клас користувача, де зберігаються його рішення і капітали  
-stocksim.kv - модуль на мові kivi, GUI  
+main.py - main module of the program 
+graphs.py - visualisation of current data in graph 
+market.py - contains class Market, which makes requests for current data, saves and calulates it   
+network.py - contains class Network, class of AI and their interaction
+user.py - class of the user, where his funds and desicions are saved
+stocksim.kv - module Python kivi, GUI  
 
 
-ВСТАНОВЛЕННЯ ТА ВИКОРИСТАННЯ  
+INSTALLING AND EXPERIENCING  
 
 git clone https://github.com/yankur/StockExchange_coursework.git  
 cd StockExchange_coursework/  
